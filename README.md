@@ -107,7 +107,7 @@ We can work on projects together, test new ideas, or you can send me malware sam
 ---
 
 ## Quick Start
-###1) LutziCOMLyzer
+### 1) LutziCOMLyzer
 # from an elevated cmd/powershell in the repo folder
 python LutziCheckSuspiciousCOM.py ^
   --mode strict ^
@@ -123,7 +123,7 @@ python LutziCheckSuspiciousCOM.py ^
  - ** If something survives the static filters, the tool will ask you whether to run VT and/or AI.
  - ** Nothing is sent anywhere unless you choose it and provide keys.
 
-###2) TT7
+### 2) TT7
 # from an elevated PowerShell in the repo folder
 - ** Set-ExecutionPolicy Bypass -Scope Process -Force
 - ** .\tt7.ps1 -OutDir "C:\Temp\TT7_Out" -ReadOnly
