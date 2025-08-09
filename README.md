@@ -29,6 +29,8 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 
 > **Heads up (future docs):** if persistence keeps coming back, check Intel ME and consider SPI flash reprogramming with a clean BIOS image. A simple ME guide + SPI walk-through will be added later.
 
+
+
 ---
 ## 🧩 Workflow (high level)
 
@@ -43,4 +45,60 @@ flowchart TD
     G --> H
     H --> I[Write CSV/JSON if requested]
 
+
+
+If you find an issue, need a fix, or want to collaborate:
+📧 lutzigoz@lutzigoz.com  
+We can work on projects together, test new ideas, or you can send me malware samples to analyze.  
+
+
+
+
+## Notes
+
+ --mode strict = escalate only if static checks still point suspicious.
+
+-->  On a big machine, expect ~4 hours for a deep pass.
+
+-->  If something survives the static filters, the tool will ask you whether to run VT and/or AI.
+-->  Nothing is sent anywhere unless you choose it and provide keys.
+
+
+## Quick Start
+###1) LutziCOMLyzer
+# from an elevated cmd/powershell in the repo folder
+python LutziCheckSuspiciousCOM.py ^
+  --mode strict ^
+  --export out\com_scan.csv
+
+
+ ## Notes
+
+  --mode strict = escalate only if static checks still point suspicious.
+
+ --> On a big machine, expect ~4 hours for a deep pass.
+
+ --> If something survives the static filters, the tool will ask you whether to run VT and/or AI.
+ --> Nothing is sent anywhere unless you choose it and provide keys.
+
+###2) TT7
+# from an elevated PowerShell in the repo folder
+--> Set-ExecutionPolicy Bypass -Scope Process -Force
+--> .\tt7.ps1 -OutDir "C:\Temp\TT7_Out" -ReadOnly
+
+Notes
+
+  -ReadOnly is the default mindset: enumerate, don’t modify.
+
+-->  Add -UseVSS if you want to snapshot and copy locked hives safely.
+
+--> Output CSV/JSON/XML only if you request it via flags inside the script.
+
+## Layout
+.
+├─ LutziCheckSuspiciousCOM.py   # Python COM & indirect persistence triage
+├─ tt7.ps1                      # PowerShell SID/ACL triage
+├─ README.md
+├─ LICENSE
+└─ .gitignore
 
