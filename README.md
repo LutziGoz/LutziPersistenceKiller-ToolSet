@@ -1,4 +1,4 @@
-# LutzigOZ-APK (Advanced Persistence Killer) -Free Bundle
+# LutziGoz-APK (Advanced Persistence Killer) -Free Bundle
 Copyright (c) 2025 LutziGoz lutzigoz@lutzigoz.com
 # LutziLyzer 2025
 **COM & SID static persistence detection — one repo, two tools (free).**  
