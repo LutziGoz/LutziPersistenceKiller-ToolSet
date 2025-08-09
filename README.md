@@ -30,10 +30,8 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 > **Heads up (future docs):** if persistence keeps coming back, check Intel ME and consider SPI flash reprogramming with a clean BIOS image. A simple ME guide + SPI walk-through will be added later.
 
 ---
-
 ## 🧩 Workflow (high level)
 
-```mermaid
 flowchart TD
     A[Start scan] --> B[Enumerate COM & hotspots]
     B --> C[Static checks: exists, signed, trusted path, allowlist]
@@ -44,13 +42,5 @@ flowchart TD
     F --> H[Summarize reasoning]
     G --> H
     H --> I[Write CSV/JSON if requested]
-
-
-.
-├─ LutziCheckSuspiciousCOM.py   # Python COM & indirect persistence triage
-├─ tt7.ps1                      # PowerShell SID/ACL triage
-├─ README.md
-├─ LICENSE
-└─ .gitignore
 
 
