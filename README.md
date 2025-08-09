@@ -90,15 +90,19 @@ Notes
 
   -ReadOnly is the default mindset: enumerate, don’t modify.
 
--->  Add -UseVSS if you want to snapshot and copy locked hives safely.
+- **  Add -UseVSS if you want to snapshot and copy locked hives safely.
 
---> Output CSV/JSON/XML only if you request it via flags inside the script.
+- ** Output CSV/JSON/XML only if you request it via flags inside the script.
 
 ## Layout
 .
 ├─ LutziCheckSuspiciousCOM.py   # Python COM & indirect persistence triage.
+
 ├─ tt7.ps1                      # PowerShell SID/ACL triage.
+
 ├─ README.md.
+
 ├─ LICENSE.
+
 └─ .gitignore.
 
