@@ -35,9 +35,9 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 ## 🔧 Requirements
 > • **LutziCOMLyzer**  (Python)
 
-  - **Windows 10/11
+  - **Windows 7/8/10/11
 
-  - **Python 3.9+
+  - **Python 3.8.6+
 
   - **PowerShell available in PATH (for signature checks on Windows)
 
