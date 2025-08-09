@@ -107,7 +107,6 @@ flowchart TD
     H --> I[Write CSV/JSON if requested]
 
 
-
 If you find an issue, need a fix, or want to collaborate:
 📧 lutzigoz@lutzigoz.com  
 We can work on projects together, test new ideas, or you can send me malware samples to analyze.  
@@ -123,7 +122,7 @@ We can work on projects together, test new ideas, or you can send me malware sam
 
 - **  If something survives the static filters, the tool will ask you whether to run VT and/or AI.
 - **  Nothing is sent anywhere unless you choose it and provide keys.
-
+---
 
 ## Quick Start
 ###1) LutziCOMLyzer
