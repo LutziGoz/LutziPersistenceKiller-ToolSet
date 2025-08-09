@@ -96,7 +96,7 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 ## 🧩 Workflow (high level)
 
 flowchart TD
-    A[Start scan] --> B[Enumerate COM & hotspots]
+    A --> [Start scan] --> B[Enumerate COM & hotspots]
     B --> C[Static checks: exists, signed, trusted path, allowlist]
     C -->|Clean| D[Report clean / optional CSV]
     C -->|Suspicious| E{Ask operator: VT/AI?}
