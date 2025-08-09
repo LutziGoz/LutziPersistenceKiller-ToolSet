@@ -4,7 +4,6 @@ Copyright (c) 2025 LutziGoz lutzigoz@lutzigoz.com
 **COM & SID static persistence detection — one repo, two tools (free).**  
 Windows-focused, offline-friendly, strict static checks first. Optional VT/AI only **when you choose**.
 
-> Tools included  
 ## Tools Included
 
 - **LutziCOMLyzer - Advanced Persistence Detector** (`LutziCheckSuspiciousCOM.py`)  
