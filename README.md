@@ -19,20 +19,6 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
   • Supports writing cleaned hives back to the system and verifying post-install clean state.  
   • Includes optional download/burn of clean Windows ISOs for secure rebuilds.
 ---
-flowchart TD
-    A([Start]) --> B{Tool Selected?}
-    B -->|LutziCOMLyzer| C[Enumerate COM/WinRT CLSIDs]
-    B -->|TT7| D[Enumerate SIDs, ACLs, Registry Hotspots]
-    C --> E[Static Checks: Exists, Signed, Trusted Path]
-    D --> E
-    E -->|Clean| F[Report Clean / Optional CSV/JSON]
-    E -->|Suspicious| G{Ask Operator: VT / AI?}
-    G -->|Yes| H[VT/AI Reasoning]
-    G -->|No| I[Mark Locally Suspicious]
-    H --> J[Output + Reasoning on Demand]
-    I --> J
-    J --> K([End])
----
 ## ✨ What it does
 - **Static first:** file existence, Authenticode signature, trusted-path / allowlist checks.
 - **Focused scope:** COM CLSIDs & common indirect persistence surfaces; SID/ACL anomalies.
