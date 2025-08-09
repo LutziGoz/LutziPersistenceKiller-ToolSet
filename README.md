@@ -56,12 +56,12 @@ We can work on projects together, test new ideas, or you can send me malware sam
 
 ## Notes
 
- --mode strict = escalate only if static checks still point suspicious.
+ - ** mode strict = escalate only if static checks still point suspicious.
 
--->  On a big machine, expect ~4 hours for a deep pass.
+- **  On a big machine, expect ~4 hours for a deep pass.
 
--->  If something survives the static filters, the tool will ask you whether to run VT and/or AI.
--->  Nothing is sent anywhere unless you choose it and provide keys.
+- **  If something survives the static filters, the tool will ask you whether to run VT and/or AI.
+- **  Nothing is sent anywhere unless you choose it and provide keys.
 
 
 ## Quick Start
@@ -74,17 +74,17 @@ python LutziCheckSuspiciousCOM.py ^
 
  ## Notes
 
-  --mode strict = escalate only if static checks still point suspicious.
+  - ** mode strict = escalate only if static checks still point suspicious.
 
- --> On a big machine, expect ~4 hours for a deep pass.
+ - ** On a big machine, expect ~4 hours for a deep pass.
 
- --> If something survives the static filters, the tool will ask you whether to run VT and/or AI.
- --> Nothing is sent anywhere unless you choose it and provide keys.
+ - ** If something survives the static filters, the tool will ask you whether to run VT and/or AI.
+ - ** Nothing is sent anywhere unless you choose it and provide keys.
 
 ###2) TT7
 # from an elevated PowerShell in the repo folder
---> Set-ExecutionPolicy Bypass -Scope Process -Force
---> .\tt7.ps1 -OutDir "C:\Temp\TT7_Out" -ReadOnly
+- ** Set-ExecutionPolicy Bypass -Scope Process -Force
+- ** .\tt7.ps1 -OutDir "C:\Temp\TT7_Out" -ReadOnly
 
 Notes
 
@@ -96,9 +96,9 @@ Notes
 
 ## Layout
 .
-├─ LutziCheckSuspiciousCOM.py   # Python COM & indirect persistence triage
-├─ tt7.ps1                      # PowerShell SID/ACL triage
-├─ README.md
-├─ LICENSE
-└─ .gitignore
+├─ LutziCheckSuspiciousCOM.py   # Python COM & indirect persistence triage.
+├─ tt7.ps1                      # PowerShell SID/ACL triage.
+├─ README.md.
+├─ LICENSE.
+└─ .gitignore.
 
