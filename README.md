@@ -18,7 +18,6 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
   • Repairs ACLs, removes persistence keys, and backs up/restores registry hives.  
   • Supports writing cleaned hives back to the system and verifying post-install clean state.  
   • Includes optional download/burn of clean Windows ISOs for secure rebuilds.
-
 ---
 
 ## ✨ What it does
@@ -89,23 +88,6 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 - Preparing for **firmware-level checks** (Intel ME / SPI flash) if software-level is clean but persistence returns.
 
 > **Heads up (future docs):** if persistence keeps coming back, check Intel ME and consider SPI flash reprogramming with a clean BIOS image. A simple ME guide + SPI walk-through will be added later.
-
-
-
----
-## 🧩 Workflow (high level)
-
-flowchart TD
-    A --> [Start scan] --> B[Enumerate COM & hotspots]
-    B --> C[Static checks: exists, signed, trusted path, allowlist]
-    C -->|Clean| D[Report clean / optional CSV]
-    C -->|Suspicious| E{Ask operator: VT/AI?}
-    E -->|Yes| F[VT/AI on suspicious only]
-    E -->|No| G[Mark suspicious (local)]
-    F --> H[Summarize reasoning]
-    G --> H
-    H --> I[Write CSV/JSON if requested]
-
 ---
 If you find an issue, need a fix, or want to collaborate:
 📧 lutzigoz@lutzigoz.com  
@@ -154,18 +136,7 @@ Notes
 
 - ** Output CSV/JSON/XML only if you request it via flags inside the script.
 
-## Layout
-.
-├─ LutziCheckSuspiciousCOM.py   # Python COM & indirect persistence triage.
-
-├─ tt7.ps1                      # PowerShell SID/ACL triage.
-
-├─ README.md.
-
-├─ LICENSE.
-
-└─ .gitignore.
-
+---
 ## 📜 License
 
 ###LutziGoz Free-Use License (2025)
