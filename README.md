@@ -106,7 +106,7 @@ flowchart TD
     G --> H
     H --> I[Write CSV/JSON if requested]
 
-
+---
 If you find an issue, need a fix, or want to collaborate:
 📧 lutzigoz@lutzigoz.com  
 We can work on projects together, test new ideas, or you can send me malware samples to analyze.  
