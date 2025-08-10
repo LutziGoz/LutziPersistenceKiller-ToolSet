@@ -63,7 +63,7 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
   - ** The tool uses trusted paths and signer allowlists (built-in + yours).
 
   - ** You can extend with your own whitelist / blacklist concepts (e.g., based on LOKI or your org’s intel).
-
+this is actually for first, should update loki db and more relevant, then continue to scan and detection steps.
   - ** Anything whitelisted is never sent to VT/AI.
 
 ##🛡 Safety & ethics
