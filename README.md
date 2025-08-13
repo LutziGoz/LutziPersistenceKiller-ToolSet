@@ -114,13 +114,26 @@ python LutziCheckSuspiciousCOM.py ^
 - ** Set-ExecutionPolicy Bypass -Scope Process -Force
 - ** .\tt7.ps1 -OutDir "C:\Temp\TT7_Out" -ReadOnly
 
-Notes
 
   -ReadOnly is the default mindset: enumerate, don’t modify.
 
 - **  Add -UseVSS if you want to snapshot and copy locked hives safely.
 
 - ** Output CSV/JSON/XML only if you request it via flags inside the script.
+> ### Heads-up: Deep Scan Runtime
+> `tt7` performs a **full persistence sweep** across services, drivers, COM, WMI, scheduled tasks, LSASS hooks, userland autoruns, and more.  
+> On large systems or multi-disk environments this can take **many hours (up to ~24h)**, especially when:
+> - scanning network-mounted volumes or very large profile stores,
+> - collecting extended metadata / hashes from cold storage,
+> - running with maximum verbosity and artifact preservation.
+>
+> **Tips to speed it up**
+> - Prefer **local disks** (avoid remote mounts during the scan).
+> - Run as admin with **PowerShell 7+**.
+> - Use targeted scopes first (e.g., `-Scope Autoruns,COM,Tasks`) then expand.
+> - Exclude known-good bulk paths with `-ExcludePath`.
+>
+> **OPS rule:** Let the long scan finish once started—partial runs can miss chained persistence.
 
 ---
 ## 📜 License
