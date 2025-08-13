@@ -1,0 +1,5 @@
+tag_prefix: "v"
+minor_window: 1
+lts_minors: []
+unsupported_minors: []
+newest_first: true
