@@ -142,6 +142,11 @@ python LutziCheckSuspiciousCOM.py ^
 
 Copyright (c) 2025 LutziGoz lutzigoz@lutzigoz.com
 
+https://lutzigoz.com
+
+![lUTZIgOZGIF](https://github.com/user-attachments/assets/b6b40d47-02bb-4d4c-b8ce-ab9f3e08a6f0)
+
+
 This software is released into the public domain for free use, modification, distribution, and incorporation into any project — personal, commercial, or otherwise — anywhere in the world.
 
 ###You may:
