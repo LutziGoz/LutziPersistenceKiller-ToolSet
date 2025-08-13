@@ -4,6 +4,9 @@ Copyright (c) 2025 LutziGoz lutzigoz@lutzigoz.com
 **COM & SID static persistence detection — one repo, two tools (free).**  
 Windows-focused, offline-friendly, strict static checks first. Optional VT/AI only **when you choose**.
 
+<img width="1024" height="1024" alt="ChatGPT Image Aug 9, 2025, 03_07_15 PM" src="https://github.com/user-attachments/assets/045d8919-b725-4767-8d03-ea1021ab2115" />
+
+
 ## Tools Included
 
 - **LutziCOMLyzer - Advanced Persistence Detector** (`LutziCheckSuspiciousCOM.py`)  
