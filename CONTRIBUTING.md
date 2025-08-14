@@ -21,7 +21,7 @@ First—thanks for wanting to help. This project targets precise, verifiable per
 # clone
 1. run step by step codes are below in CMD/CLI;
 2. `git clone https://github.com/LutziGoz/LutziPersistenceKiller-ToolSet.git`
-3. `cd LutziPersistenceKiller`
+3. `cd LutziPersistenceKiller-ToolSet`
 
 # create env (Python 3.11+ recommended)
 - python -m venv .venv
