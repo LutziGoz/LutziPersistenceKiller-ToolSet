@@ -90,7 +90,7 @@ this is actually for first, should update loki db and more relevant, then contin
 - Preparing for **firmware-level checks** (Intel ME / SPI flash) if software-level is clean but persistence returns.
 
 > **Heads up (future docs):** if persistence keeps coming back, check Intel ME and consider SPI flash reprogramming with a clean BIOS image. A simple Video guide + SPI walk-through look at folloing Videos.
-
+## "When Hardware Making Love With Software"
 - **connect to chip directly.
 
 - (Video-1).
