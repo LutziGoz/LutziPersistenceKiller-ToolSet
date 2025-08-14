@@ -96,13 +96,11 @@ this is actually for first, should update loki db and more relevant, then contin
 
 - **erase > program > verify (2 video parts).
 
-
+- (V1).
 
 [![Watch the video](t.jpg)](https://github.com/user-attachments/assets/a1a953d7-b018-4f13-913c-49edb0068d02)
 
-
-
-
+- (v2).
 [![Watch the video](t.jpg)](https://github.com/user-attachments/assets/7690376e-c7f8-43a7-9e95-e08942df8e90)
 
 
