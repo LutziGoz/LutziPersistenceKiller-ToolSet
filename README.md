@@ -89,7 +89,15 @@ this is actually for first, should update loki db and more relevant, then contin
 - Need a **static, explainable** triage (no secret black magic).
 - Preparing for **firmware-level checks** (Intel ME / SPI flash) if software-level is clean but persistence returns.
 
-> **Heads up (future docs):** if persistence keeps coming back, check Intel ME and consider SPI flash reprogramming with a clean BIOS image. A simple ME guide + SPI walk-through will be added later.
+> **Heads up (future docs):** if persistence keeps coming back, check Intel ME and consider SPI flash reprogramming with a clean BIOS image. A simple Video guide + SPI walk-through look at folloing Videos.
+
+- **connect to chip directly.
+https://github.com/user-attachments/assets/62a99e55-c11a-47af-b2db-6aa85aa3bc58
+
+- **erase > program > verify(2 video parts).
+https://github.com/user-attachments/assets/7690376e-c7f8-43a7-9e95-e08942df8e90
+
+
 ---
 
 ## Quick Start
