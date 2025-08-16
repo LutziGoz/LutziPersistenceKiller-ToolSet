@@ -52,14 +52,12 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 
   - VSS optional if you want to snapshot locked hives
 ---
-## 🗂 ## Outputs (MAIN MENU — user-selected)
-
--   LutziCOMLyzer: com_scan.csv (CLSID, path, exists, signed, trusted, hash, notes).
--   Optional: reasoning snippets when you used AI, VT verdict when you used VT.
-
+## 🗂 Outputs ("menu-driven / interactive mode")
+- **LutziCOMLyzer**: `com_scan.csv` (CLSID, path, exists, signed, trusted, hash, notes).
+- **Optional**: reasoning snippets when you used AI; VT verdict when you used VT.
 -   TT7: services.csv/json, tasks.csv/json, com_hotspots.csv/json, ifeo.csv/json, appcontainer.csv/json, acl_report.csv/json (Automatically will export during Search Processing).
+➡️ By design there is no continuous auto-logging. You decide when to export.
 
--   By design, there is no continuous auto-logging. You decide when to export.
 ---
 ## ⚙️ Allow/deny lists
 
@@ -196,31 +194,19 @@ https://lutzigoz.com
 
 ![lUTZIgOZGIF](https://github.com/user-attachments/assets/b6b40d47-02bb-4d4c-b8ce-ab9f3e08a6f0)
 
+This project is licensed under the **MIT License**.
 
-This software is released into the public domain for free use, modification, distribution, and incorporation into any project — personal, commercial, or otherwise — anywhere in the world.
+You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of this software, 
+in both open-source and proprietary projects, for personal or commercial purposes.
 
-### You may:
+Attribution is not required but appreciated.  
+Use of the author’s name or branding for endorsement requires permission.
 
-  Use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+> **Disclaimer:** This software is provided *"AS IS"*, without warranty of any kind, express or implied.  
+> The author is not liable for any damages, misuse, or consequences arising from use.
 
-  Incorporate this work into proprietary or open-source software
+📄 See the [LICENSE](LICENSE) file for full details.
 
-  Use it for any purpose, including research, education, security testing, or commercial deployment
-
-### You are not required to:
-
-  Keep this notice or credit me (though attribution is appreciated)
-
-  Pay any fees or royalties
-
-### You may not:
-
-  Claim authorship of the original work without meaningful modification
-
-  Use my name or branding to imply endorsement without permission
-
-Disclaimer:
-This software is provided “AS IS,” without warranty of any kind, express or implied. The author is not liable for any damages, misuse, or consequences arising from use.
 
 ---
 If you find an issue, need a fix, or want to collaborate:
