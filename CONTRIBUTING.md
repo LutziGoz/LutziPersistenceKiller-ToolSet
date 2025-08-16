@@ -1,9 +1,12 @@
 # Contributing to LutziPersistenceKiller Toolset
 
+1. **<img width="1024" height="1024" alt="FREEDOM" src="https://github.com/user-attachments/assets/c38e9fef-dedf-41e1-90b3-3386e04667d8" />
+
 First—thanks for wanting to help. This project targets precise, verifiable persistence eradication. Keep changes reproducible, minimal, and backed by evidence.
 
 ## How to Contribute (TL;DR)
-1. **Open an Issue** first for any non-trivial change. Use the templates.
+
+Open an Issue** first for any non-trivial change. Use the templates.
 2. **Fork** the repo and create a branch: `feature/<short-name>` or `fix/<short-name>`.
 3. Keep PRs **small**, focused, and with tests. Link the issue: `Fixes #123`.
 4. Pass **lint, type checks, and tests** locally before opening the PR.
