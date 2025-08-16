@@ -16,7 +16,7 @@ requests==2.32.4
 pywin32==306
 configparser==6.0.0
 web-browser==0.0.1
-openai==0.28.0
+openai==1.99.9
 collections==0.1.6
 colorama==0.4.4
 tqdm==4.66.3
