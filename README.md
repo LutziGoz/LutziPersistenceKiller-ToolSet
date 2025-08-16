@@ -33,10 +33,10 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 - **Output:** CSV/JSON **only when you ask for export** (no endless auto-logging).
 
 ---
-## 🔧 Requirements
+## 🔧 Requirements for PY+PS1.
 > • **LutziCOMLyzer**  (Python)
 
-  - **Windows 7/8/10/11
+  - **Windows 7/8/10/11 Administrator Privileges recommended
 
   - **Python 3.8.6+
 
@@ -46,7 +46,7 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 
 > • TT7 (PowerShell)
 
-  - Windows 10/11, Admin recommended
+  - **Windows 7/8/10/11, Administrator Privileges recommended
 
   - PowerShell 5.1+ (or 7+), Set-ExecutionPolicy Bypass -Scope Process -Force when running locally
 
@@ -57,7 +57,7 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 -   LutziCOMLyzer: com_scan.csv (CLSID, path, exists, signed, trusted, hash, notes).
 -   Optional: reasoning snippets when you used AI, VT verdict when you used VT.
 
--   TT7: services.csv/json, tasks.csv/json, com_hotspots.csv/json, ifeo.csv/json, appcontainer.csv/json, acl_report.csv/json (names may vary by your flags).
+-   TT7: services.csv/json, tasks.csv/json, com_hotspots.csv/json, ifeo.csv/json, appcontainer.csv/json, acl_report.csv/json (Automatically will export during Search Processing).
 
 -   By design, there is no continuous auto-logging. You decide when to export.
 ---
@@ -65,8 +65,8 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 
   -  The tool uses trusted paths and signer allowlists (built-in + yours).
 
-  -  You can extend with your own whitelist / blacklist concepts (e.g., based on LOKI or your org’s intel).
-this is actually for first, should update loki db and more relevant, then continue to scan and detection steps.
+  -  You can extend with your own whitelist / blacklist concepts (e.g., based on LOKI or your org’s intel) and mix it with Loki db.
+  - this is actually for first, should update loki db and more relevant, then continue to scan and detection steps.
   -  Anything whitelisted is never sent to VT/AI.
 
 ##🛡 Safety & ethics
@@ -137,7 +137,7 @@ Typical options include:
 
  ## Notes
 
-  - mode strict = escalate only if static checks still point suspicious.
+  - Static Mode = Recommended.
 
  - On a big machine, expect ~4 hours for a deep pass.
 
