@@ -199,7 +199,7 @@ https://lutzigoz.com
 
 This software is released into the public domain for free use, modification, distribution, and incorporation into any project — personal, commercial, or otherwise — anywhere in the world.
 
-###You may:
+### You may:
 
   Use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
 
@@ -207,7 +207,7 @@ This software is released into the public domain for free use, modification, dis
 
   Use it for any purpose, including research, education, security testing, or commercial deployment
 
-###You are not required to:
+### You are not required to:
 
   Keep this notice or credit me (though attribution is appreciated)
 
