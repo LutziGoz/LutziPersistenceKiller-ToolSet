@@ -17,4 +17,4 @@ tqdm==4.66.3
 python-csv==0.0.14
 datetime==5.5
 ctypes==1.0.2
-pillow==10.3.0
+pillow==11.3.0
