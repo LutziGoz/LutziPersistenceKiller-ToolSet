@@ -52,7 +52,7 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 
   - VSS optional if you want to snapshot locked hives
 ---
-## 🗂 Outputs (on demand)
+## 🗂 Outputs ("menu-driven / interactive mode")
 
 -   LutziCOMLyzer: com_scan.csv (CLSID, path, exists, signed, trusted, hash, notes).
 -   Optional: reasoning snippets when you used AI, VT verdict when you used VT.
@@ -113,11 +113,26 @@ this is actually for first, should update loki db and more relevant, then contin
 ---
 
 ## Quick Start
+
+- All tools run in MAIN MENU mode: the user chooses actions step-by-step. 
+- Reports (CSV/JSON/XML) and escalations (VirusTotal/AI) are generated **only when explicitly selected by the user**.
+
 ### 1) LutziCOMLyzer
-# from an elevated cmd/powershell in the repo folder
-python LutziCheckSuspiciousCOM.py ^
-  --mode strict ^
-  --export out\com_scan.csv
+## from an elevated cmd/powershell in the repo folder
+- python "./LutziCheckSuspiciousCOM.py"
+### Main Menu Overview
+Both the Python and PowerShell tools use an interactive MAIN MENU.
+
+Typical options include:
+[1] Static or live scan
+[2] Offline dump & analysis
+[3] Restore/backup hives
+[4] COM registry scan (static / AI-assisted)
+[5] Manual SID cleanup
+[6] Utilities (ISO download, post-install verification, hash database update)
+[h] Help
+[0] Exit
+
 
 
  ## Notes
@@ -129,31 +144,46 @@ python LutziCheckSuspiciousCOM.py ^
  - If something survives the static filters, the tool will ask you whether to run VT and/or AI.
  - Nothing is sent anywhere unless you choose it and provide keys.
 
+➡️ Nothing runs automatically: every action, export, or escalation is chosen interactively in the MAIN MENU.
+
 ### 2) TT7
 # from an elevated PowerShell in the repo folder
 - Set-ExecutionPolicy Bypass -Scope Process -Force
-- .\tt7.ps1 -OutDir "C:\Temp\TT7_Out" -ReadOnly
+- .\tt7.ps1
+- ## Main Menu (PowerShell)
+
+`LutziSIDHunter.ps1` runs entirely in interactive MAIN MENU mode.  
+When you launch the script, you will see a menu similar to this:
+
+[1] Scan & Clean LIVE registry (Administrator only)  
+[2] Dump & Analyze (create hive dumps, optional offline scan)  
+[3] Restore or Backup (offline analysis / forensic backup)  
+[4] Write Cleaned Hives Back to System  
+[5] Manual SID Removal Utility  
+[6] Download Clean Windows 11 ISO & Burn to USB  
+[7] Post-Install CleanBoot State Verification  
+[H] Display Help  
+[0] Exit  
+
+➡️ **Nothing runs automatically.** Every action (scan, cleanup, backup, ISO download) is executed only when you choose it from the menu.
 
 
-  -ReadOnly is the default mindset: enumerate, don’t modify.
-
-- Add -UseVSS if you want to snapshot and copy locked hives safely.
-
-- Output CSV/JSON/XML only if you request it via flags inside the script.
+- Output CSV/JSON/XML automatically.
 > ### Heads-up: Deep Scan Runtime
 > `tt7` performs a **full persistence sweep** across services, drivers, COM, WMI, scheduled tasks, LSASS hooks, userland autoruns, and more.  
 > On large systems or multi-disk environments this can take **many hours (up to ~24h)**, especially when:
 > - scanning network-mounted volumes or very large profile stores,
 > - collecting extended metadata / hashes from cold storage,
 > - running with maximum verbosity and artifact preservation.
->
+
 > **Tips to speed it up**
-> - Prefer **local disks** (avoid remote mounts during the scan).
+> - Best practice: run from a **clean offline environment** (Hiren’s BootCD, WinPE, or similar) to avoid persistence evasion.
+> - If running live, prefer **local disks** over remote mounts for faster access.
 > - Run as admin with **PowerShell 7+**.
-> - Use targeted scopes first (e.g., `-Scope Autoruns,COM,Tasks`) then expand.
+> - Start with targeted scopes first (e.g., `-Scope Autoruns,COM,Tasks`) then expand.
 > - Exclude known-good bulk paths with `-ExcludePath`.
 >
-> **OPS rule:** Let the long scan finish once started—partial runs can miss chained persistence.
+> **OPS rule:** Let the long scan finish once started — partial runs can miss chained persistence.
 
 ---
 ## 📜 License
