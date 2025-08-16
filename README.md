@@ -183,7 +183,7 @@ This software is released into the public domain for free use, modification, dis
 
   Pay any fees or royalties
 
-###You may not:
+### You may not:
 
   Claim authorship of the original work without meaningful modification
 
