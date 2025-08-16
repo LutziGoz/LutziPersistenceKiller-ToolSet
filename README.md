@@ -52,7 +52,7 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 
   - VSS optional if you want to snapshot locked hives
 ---
-## 🗂 Outputs ("menu-driven / interactive mode")
+## 🗂 ## Outputs (MAIN MENU — user-selected)
 
 -   LutziCOMLyzer: com_scan.csv (CLSID, path, exists, signed, trusted, hash, notes).
 -   Optional: reasoning snippets when you used AI, VT verdict when you used VT.
@@ -175,10 +175,9 @@ When you launch the script, you will see a menu similar to this:
 > - scanning network-mounted volumes or very large profile stores,
 > - collecting extended metadata / hashes from cold storage,
 > - running with maximum verbosity and artifact preservation.
-
 > **Tips to speed it up**
 > - Best practice: run from a **clean offline environment** (Hiren’s BootCD, WinPE, or similar) to avoid persistence evasion.
-> - If running live, prefer **local disks** over remote mounts for faster access.
+> - If running live, prefer **local disks** over remote mounts.
 > - Run as admin with **PowerShell 7+**.
 > - Start with targeted scopes first (e.g., `-Scope Autoruns,COM,Tasks`) then expand.
 > - Exclude known-good bulk paths with `-ExcludePath`.
