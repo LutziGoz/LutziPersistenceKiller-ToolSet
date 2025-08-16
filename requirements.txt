@@ -1,7 +1,7 @@
 tk-tools==0.16.0
 regex==2025.7.34
 temp==2020.7.2
-orjson==3.9.15
+orjson==3.11.2
 jsonpatch==1.33
 jsonpointer==2.4
 jsonschema==4.21.1
