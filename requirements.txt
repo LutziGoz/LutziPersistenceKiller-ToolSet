@@ -13,7 +13,7 @@ web-browser==0.0.1
 openai==0.28.0
 collections==0.1.6
 colorama==0.4.4
-tqdm==4.66.3
+tqdm==4.67.1
 python-csv==0.0.14
 datetime==5.5
 ctypes==1.0.2
