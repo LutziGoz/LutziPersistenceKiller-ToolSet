@@ -1,4 +1,4 @@
-# LutziGoz-APK (Advanced Persistence Killer) -Free Bundle
+# LutziGoz-LPK (Lutzi Persistence Killer) ToolSet-Free Bundle
 Copyright (c) 2025 LutziGoz lutzigoz@lutzigoz.com
 # LutziLyzer 2025
 **COM & SID static persistence detection — one repo, two tools (free).**  
@@ -69,7 +69,7 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
   - this is actually for first, should update loki db and more relevant, then continue to scan and detection steps.
   -  Anything whitelisted is never sent to VT/AI.
 
-##🛡 Safety & ethics
+## 🛡 Safety & ethics
 
   - For defensive use on systems you own or are authorized to analyze.
 
@@ -124,6 +124,7 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 Both the Python and PowerShell tools use an interactive MAIN MENU.
 
 Typical options include:
+
 [1] Static or live scan
 [2] Offline dump & analysis
 [3] Restore/backup hives
