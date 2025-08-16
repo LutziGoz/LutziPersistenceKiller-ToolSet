@@ -18,7 +18,7 @@ configparser==6.0.0
 web-browser==0.0.1
 openai==0.28.0
 collections==0.1.6
-colorama==0.4.4
+colorama==0.4.6
 tqdm==4.66.3
 python-csv==0.0.14
 datetime==5.5
