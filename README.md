@@ -44,45 +44,45 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 
   - **(Optional) VirusTotal / AI keys if you choose those paths
 
-> • **TT7** (PowerShell)
+> • TT7 (PowerShell)
 
-  - **Windows 10/11, Admin recommended
+  - Windows 10/11, Admin recommended
 
-  - **PowerShell 5.1+ (or 7+), Set-ExecutionPolicy Bypass -Scope Process -Force when running locally
+  - PowerShell 5.1+ (or 7+), Set-ExecutionPolicy Bypass -Scope Process -Force when running locally
 
-  - **VSS optional if you want to snapshot locked hives
+  - VSS optional if you want to snapshot locked hives
 ---
 ## 🗂 Outputs (on demand)
 
-- **  LutziCOMLyzer: com_scan.csv (CLSID, path, exists, signed, trusted, hash, notes).
-- **  Optional: reasoning snippets when you used AI, VT verdict when you used VT.
+-   LutziCOMLyzer: com_scan.csv (CLSID, path, exists, signed, trusted, hash, notes).
+-   Optional: reasoning snippets when you used AI, VT verdict when you used VT.
 
-- **  TT7: services.csv/json, tasks.csv/json, com_hotspots.csv/json, ifeo.csv/json, appcontainer.csv/json, acl_report.csv/json (names may vary by your flags).
+-   TT7: services.csv/json, tasks.csv/json, com_hotspots.csv/json, ifeo.csv/json, appcontainer.csv/json, acl_report.csv/json (names may vary by your flags).
 
-- **  By design, there is no continuous auto-logging. You decide when to export.
+-   By design, there is no continuous auto-logging. You decide when to export.
 ---
-##⚙️ Allow/deny lists
+## ⚙️ Allow/deny lists
 
-  - ** The tool uses trusted paths and signer allowlists (built-in + yours).
+  -  The tool uses trusted paths and signer allowlists (built-in + yours).
 
-  - ** You can extend with your own whitelist / blacklist concepts (e.g., based on LOKI or your org’s intel).
+  -  You can extend with your own whitelist / blacklist concepts (e.g., based on LOKI or your org’s intel).
 this is actually for first, should update loki db and more relevant, then continue to scan and detection steps.
-  - ** Anything whitelisted is never sent to VT/AI.
+  -  Anything whitelisted is never sent to VT/AI.
 
 ##🛡 Safety & ethics
 
-  - **For defensive use on systems you own or are authorized to analyze.
+  - For defensive use on systems you own or are authorized to analyze.
 
-  - **No destructive actions are included by default.
+  - No destructive actions are included by default.
 
-  - **Do not send samples or “live malware” to me. This repo is not a dropbox or a lab service.
+  - Do not send samples or “live malware” to me. This repo is not a dropbox or a lab service.
 
-##❓Support & feedback
+## ❓Support & feedback
 
-- **Found a bug? Have a feature request?
-- **Open an Issue on the repo with steps to reproduce and sanitized logs if possible.
+- Found a bug? Have a feature request?
+- Open an Issue on the repo with steps to reproduce and sanitized logs if possible.
 
-- **For collaboration ideas: use GitHub Issues/Discussions.
+- For collaboration ideas: use GitHub Issues/Discussions.
 ---
 ## 🧭 When to use it
 - Suspect a **stubborn persistence** returning after cleanup.
@@ -91,13 +91,13 @@ this is actually for first, should update loki db and more relevant, then contin
 
 > **Heads up (future docs):** if persistence keeps coming back, check Intel ME and consider SPI flash reprogramming with a clean BIOS image. A simple Video guide + SPI walk-through look at folloing Videos.
 ## "When Hardware Making Love With Software"
-- **connect to chip directly.
+- connect to chip directly.
 
 - (Video-1).
 
 [![Watch the video](t.jpg)](https://github.com/user-attachments/assets/62a99e55-c11a-47af-b2db-6aa85aa3bc58)
 
-- **erase > program > verify (2 video parts).
+- erase > program > verify (2 video parts).
 
 - (Video-2-a).
 
@@ -122,24 +122,24 @@ python LutziCheckSuspiciousCOM.py ^
 
  ## Notes
 
-  - ** mode strict = escalate only if static checks still point suspicious.
+  - mode strict = escalate only if static checks still point suspicious.
 
- - ** On a big machine, expect ~4 hours for a deep pass.
+ - On a big machine, expect ~4 hours for a deep pass.
 
- - ** If something survives the static filters, the tool will ask you whether to run VT and/or AI.
- - ** Nothing is sent anywhere unless you choose it and provide keys.
+ - If something survives the static filters, the tool will ask you whether to run VT and/or AI.
+ - Nothing is sent anywhere unless you choose it and provide keys.
 
 ### 2) TT7
 # from an elevated PowerShell in the repo folder
-- ** Set-ExecutionPolicy Bypass -Scope Process -Force
-- ** .\tt7.ps1 -OutDir "C:\Temp\TT7_Out" -ReadOnly
+- Set-ExecutionPolicy Bypass -Scope Process -Force
+- .\tt7.ps1 -OutDir "C:\Temp\TT7_Out" -ReadOnly
 
 
   -ReadOnly is the default mindset: enumerate, don’t modify.
 
-- **  Add -UseVSS if you want to snapshot and copy locked hives safely.
+- Add -UseVSS if you want to snapshot and copy locked hives safely.
 
-- ** Output CSV/JSON/XML only if you request it via flags inside the script.
+- Output CSV/JSON/XML only if you request it via flags inside the script.
 > ### Heads-up: Deep Scan Runtime
 > `tt7` performs a **full persistence sweep** across services, drivers, COM, WMI, scheduled tasks, LSASS hooks, userland autoruns, and more.  
 > On large systems or multi-disk environments this can take **many hours (up to ~24h)**, especially when:
