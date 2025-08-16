@@ -1,5 +1,9 @@
 # Code of Conduct — Lutzi Persistence Killer Tool Set
 
+
+<img width="1024" height="1024" alt="FREEDOM" src="https://github.com/user-attachments/assets/0f0a7c10-16dc-4a20-b3ce-8c861418be27" />
+
+
 ## Our Pledge
 We, as contributors and maintainers, pledge to make participation in the Lutzi Persistence Killer Tool Set (LPKTS) project a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
