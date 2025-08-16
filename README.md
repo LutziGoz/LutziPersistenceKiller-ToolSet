@@ -158,7 +158,7 @@ python LutziCheckSuspiciousCOM.py ^
 ---
 ## 📜 License
 
-###LutziGoz Free-Use License (2025)
+###LutziGoz MIT License (2025)
 
 Copyright (c) 2025 LutziGoz lutzigoz@lutzigoz.com
 
