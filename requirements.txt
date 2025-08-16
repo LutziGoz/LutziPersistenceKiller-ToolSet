@@ -11,7 +11,7 @@ orjson==3.9.15
 jsonpatch==1.33
 jsonpointer==2.4
 jsonschema==4.21.1
-jsonschema-specifications==2023.12.1
+jsonschema-specifications==2025.4.1
 requests==2.32.4
 pywin32==306
 configparser==6.0.0
