@@ -108,6 +108,8 @@ this is actually for first, should update loki db and more relevant, then contin
 [![Watch the video](t.jpg)](https://github.com/user-attachments/assets/7690376e-c7f8-43a7-9e95-e08942df8e90)
 
 
+<img width="1024" height="1024" alt="FREEDOM" src="https://github.com/user-attachments/assets/7e02cab0-45b3-4cbd-b8e9-18f07590122b" />
+
 ---
 
 ## Quick Start
