@@ -121,15 +121,20 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 ### Main Menu Overview
 Both the Python and PowerShell tools use an interactive MAIN MENU.
 
-Typical options include:
+Typical options 
 
-[1] Static or live scan
-[2] Offline dump & analysis
-[3] Restore/backup hives
-[4] COM registry scan (static / AI-assisted)
-[5] Manual SID cleanup
-[6] Utilities (ISO download, post-install verification, hash database update)
-[h] Help
+[1] Enter h to get help
+
+[2] Enter u to update known_good and known_bad checsums (recommended for each scan)
+
+[3] Enter 1 to scan com malicious/suspicious
+
+[4] Enter 2 to Restore Reg File
+
+[5] Enter 3 to run com-based indirect persistence scan
+
+[6] Download Windows iso 11 + Burn to SB Auto
+
 [0] Exit
 
 
