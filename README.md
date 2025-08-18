@@ -51,7 +51,7 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
   - PowerShell 5.1+ (or 7+), Set-ExecutionPolicy Bypass -Scope Process -Force when running locally
 
   - VSS optional and recommended also if you want to snapshot locked hives for Offline Scan Mode trough RAM-OS
-  - I Recommended to use by <a href="https://github.com/lutzigoz/LVC-LutziVentoyCasts" target="_blank">LVC-Lutzi Ventoy Casts and scan trough some USB-WindowsOS such as 'Hiren's BCD ETC and working on offline dump to take Full-Control on Environment that you working on. </a>
+  - I Recommended to use by <a href="https://github.com/lutzigoz/LVC-LutziVentoyCasts" target="_blank">LVC-Lutzi Ventoy Casts</a>  and scan trough some USB-WindowsOS such as 'Hiren's BCD ETC and working on offline dump to take Full-Control on Environment that you working on.
   
 
   
