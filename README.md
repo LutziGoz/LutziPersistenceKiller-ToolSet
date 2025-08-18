@@ -123,14 +123,11 @@ Both the Python and PowerShell tools use an interactive MAIN MENU.
 
 Typical options include:
 
-[1] Static or live scan
-[2] Offline dump & analysis
-[3] Restore/backup hives
-[4] COM registry scan (static / AI-assisted)
-[5] Manual SID cleanup
-[6] Utilities (ISO download, post-install verification, hash database update)
-[h] Help
-[0] Exit
+- "Enter 'h' to get help\n"
+- "Enter 'u' to update known_good and known_bad checksums (Recommended before each scan)\n"
+- "Enter '2' to Restore Reg file\n"
+- "Enter '3' to run COM-Based Indirect Persistence Scan\n> ").strip().lower()
+
 
 
 
