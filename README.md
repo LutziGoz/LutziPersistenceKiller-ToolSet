@@ -50,7 +50,13 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
 
   - PowerShell 5.1+ (or 7+), Set-ExecutionPolicy Bypass -Scope Process -Force when running locally
 
-  - VSS optional if you want to snapshot locked hives
+  - VSS optional and recommended also if you want to snapshot locked hives for Offline Scan Mode trough RAM-OS
+  - I Recommended to use by <a href="https://github.com/lutzigoz/LVC-LutziVentoyCasts" target="_blank">LVC-Lutzi Ventoy Casts and scan trough some USB-WindowsOS such as 'Hiren's BCD ETC and working on offline dump to take Full-Control on Environment that you working on. </a>
+  
+
+  
+
+  
 ---
 ## 🗂 Outputs ("menu-driven / interactive mode")
 - **LutziCOMLyzer**: `com_scan.csv` (CLSID, path, exists, signed, trusted, hash, notes).
@@ -123,11 +129,11 @@ Both the Python and PowerShell tools use an interactive MAIN MENU.
 
 Typical options include:
 
--  "Enter 'h' to get help\n"
--  "Enter 'u' to update known_good and known_bad checksums (Recommended before each scan)\n"
--  "Enter '1' to Scan COM Suspicious/Malicious\n"
--  "Enter '2' to Restore Reg file\n"
--  "Enter '3' to run COM-Based Indirect Persistence Scan\n> ").strip().lower()
+-  "Enter 'h' to get help"
+-  "Enter 'u' to update known_good and known_bad checksums (Recommended before each scan)"
+-  "Enter '1' to Scan COM Suspicious/Malicious"
+-  "Enter '2' to Restore Reg file"
+-  "Enter '3' to run COM-Based Indirect Persistence Scan"
 
 
 
