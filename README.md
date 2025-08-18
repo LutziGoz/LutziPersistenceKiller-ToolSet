@@ -51,7 +51,8 @@ Windows-focused, offline-friendly, strict static checks first. Optional VT/AI on
   - PowerShell 5.1+ (or 7+), Set-ExecutionPolicy Bypass -Scope Process -Force when running locally
 
   - VSS optional and recommended also if you want to snapshot locked hives for Offline Scan Mode trough RAM-OS
-  - I Recommended to use by <a href="https://github.com/lutzigoz/LVC-LutziVentoyCasts" target="_blank">LVC-Lutzi Ventoy Casts</a>  and scan trough some USB-WindowsOS such as 'Hiren's BCD ETC and working on offline dump to take Full-Control on Environment that you working on.
+  - I Recommended to use by The Compatible Tool to Complete this Mission Perfectly, <a href="https://github.com/lutzigoz/LVC-LutziVentoyCasts" target="_blank">LVC-Lutzi Ventoy Casts</a> Tool and Create your own USB-WindowsOS ENVIRONMENT ONLY ON RAN - Crucial to discover the entire Persistences, Then scan via some Only USB-WindowsOS Environment to be able to working with Powershell and Windows FileSystem (such as 'Hiren's BCD ETC).
+  - working on offline dump to take Full-Control on Environment that you working on (Enter "2" on Main Menu).
   
 
   
