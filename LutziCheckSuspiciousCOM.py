@@ -1128,13 +1128,16 @@ def scan_com_entries():
     result = []
     print("\nDo you want to send suspicious files to VirusTotal? (y/n): ", end="")
     vt_decision = input().strip().lower()
-    if vt_decision not in ["y", "n"]:
-        print("❌ Invalid input. Please choose 'y' or 'n'.")
-        scan_com_entries()
+    vt_ask_ext = input(Fore.LIGHTCYAN_EX + "\n🌐 Check COM-Based entries on VirusTotal? (y/n): ").strip().lower()
+    if vt_ask_ext == "y":
+        do_vt_check()
+    elif vt_ask_ext == "n":
+        print("⏩ Skipping VirusTotal check...")
+    else:
+        print("❌ Invalid input. Please enter y or n.\n")
     if vt_decision == 'y':
         print("\nSend automatically all files detected as suspicious or ask for each one? (all/ask): ", end="")
         VT_USER_AUTO_MODE = input().strip().lower()
-
     try:
         clsid = winreg.OpenKey(root, base)
         total_keys = winreg.QueryInfoKey(clsid)[0]
