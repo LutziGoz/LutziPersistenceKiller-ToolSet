@@ -159,14 +159,11 @@ Typical options include:
 `LutziSIDHunter.ps1` runs entirely in interactive MAIN MENU mode.  
 When you launch the script, you will see a menu similar to this:
 
-[1] Scan & Clean LIVE registry (Administrator only)  
-[2] Dump & Analyze (create hive dumps, optional offline scan)  
-[3] Restore or Backup (offline analysis / forensic backup)  
-[4] Write Cleaned Hives Back to System  
-[5] Manual SID Removal Utility  
-[6] Download Clean Windows 11 ISO & Burn to USB  
-[7] Post-Install CleanBoot State Verification  
-[H] Display Help  
+[0] Enter h to get help
+[1] Enter u to update knowngood and known_bad checksums (recommended before each scan) 
+[2]Enter 1 to scan COM suspicious/malicious
+[4] Enter 2 to restore reg file  
+[5] Enter 3 run com-based indirect persistence scan
 [0] Exit  
 
 ➡️ **Nothing runs automatically.** Every action (scan, cleanup, backup, ISO download) is executed only when you choose it from the menu.
